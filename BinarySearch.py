@@ -1,3 +1,12 @@
+# Implementar os algoritmos de busca de dados apresentados, utilizando a linguagem de programação a sua escolha (1,0 pt).
+
+# Para cada algoritmo, o trio terá que mostrar três casos de teste
+# (considerando um vetor com mil elementos -> use uma função que gera valores de 1 a 1000 NÃO ALEATÓRIO):
+# um caso que o elemento é encontrado e outro caso que o elemento não é encontrado (0,5 pt).
+
+# Para cada algoritmo, um contador de comparações deve ser usado e, no final da busca,
+# o valor do contador deve ser mostrado (0,5 pt).
+
 def binSe(v, n, menor, maior, k):
     if menor > maior:
         return -1, k
@@ -14,13 +23,12 @@ def binSe(v, n, menor, maior, k):
 
 
 if __name__ == "__main__":
-    vetor = [n for n in range(1, 1001)]
+    vet = [n for n in range(1, 1001)]
+    #0  1   2   3   4   5   6   7   8   9
+    t1 = 300
+    t2 = 10
+    t3 = 6794
 
-    posic, i = binSe(vetor, 1789, 0, len(vetor) - 1, 0)
-
-    if posic > -1:
-        print(f"Posição do elemento --> {posic}")
-    else:
-        print(f"Elemento não encontrado --> {posic}")
-
-    print(f"vezes rodado --> {i}")
+    print(f"{t1}: Posição --> {binSe(vet, t1, 0, len(vet) - 1, 0)[0]} || Vezes rodado --> {binSe(vet, t1, 0, len(vet) - 1, 0)[1]}")
+    print(f"{t2}: Posição --> {binSe(vet, t2, 0, len(vet) - 1, 0)[0]} || Vezes rodado --> {binSe(vet, t2, 0, len(vet) - 1, 0)[1]}")
+    print(f"{t3}: Posição --> {binSe(vet, t3, 0, len(vet) - 1, 0)[0]} || Vezes rodado --> {binSe(vet, t3, 0, len(vet) - 1, 0)[1]}")
