@@ -34,5 +34,6 @@ def checarTabelaFreq(n):
 if __name__ == "__main__":
     vet = [n for n in range(1, 1001)]
     # 0  1   2   3   4   5   6   7   8   9
-    criarTabFreq(vet)
-    checarTabelaFreq(140)
+    checarTabelaFreq(40)
+    checarTabelaFreq(333)
+    checarTabelaFreq(609876)

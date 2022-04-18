@@ -25,10 +25,10 @@ def binSe(v, n, menor, maior, k):
 if __name__ == "__main__":
     vet = [n for n in range(1, 1001)]
     #0  1   2   3   4   5   6   7   8   9
-    t1 = 300
-    t2 = 10
-    t3 = 6794
+    t1 = binSe(vet, 250, 0, len(vet) - 1, 0)
+    t2 = binSe(vet, 333, 0, len(vet) - 1, 0)
+    t3 = binSe(vet, 6923, 0, len(vet) - 1, 0)
 
-    print(f"{t1}: Posição --> {binSe(vet, t1, 0, len(vet) - 1, 0)[0]} || Vezes rodado --> {binSe(vet, t1, 0, len(vet) - 1, 0)[1]}")
-    print(f"{t2}: Posição --> {binSe(vet, t2, 0, len(vet) - 1, 0)[0]} || Vezes rodado --> {binSe(vet, t2, 0, len(vet) - 1, 0)[1]}")
-    print(f"{t3}: Posição --> {binSe(vet, t3, 0, len(vet) - 1, 0)[0]} || Vezes rodado --> {binSe(vet, t3, 0, len(vet) - 1, 0)[1]}")
+    print(f"Posição --> {t1[0]} || Vezes rodado --> {t1[1]}")
+    print(f"Posição --> {t2[0]} || Vezes rodado --> {t2[1]}")
+    print(f"Posição --> {t3[0]} || Vezes rodado --> {t3[1]}")
